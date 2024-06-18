@@ -30,7 +30,7 @@ function validateForm() {
     var message = document.getElementById('message').value.trim();
     var isValid = true;
 
-    // Validate username
+    
     if (username === '') {
         isValid = false;
         document.getElementById('usernameError').textContent = 'Veuillez entrer votre nom.';
@@ -38,7 +38,7 @@ function validateForm() {
         document.getElementById('usernameError').textContent = '';
     }
 
-    // Validate email
+    
     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
         isValid = false;
@@ -47,7 +47,7 @@ function validateForm() {
         document.getElementById('emailError').textContent = '';
     }
 
-    // Validate message
+    
     if (message === '') {
         isValid = false;
         document.getElementById('messageError').textContent = 'Veuillez écrire votre message.';
@@ -56,4 +56,3 @@ function validateForm() {
     }
 
     return isValid;
-}

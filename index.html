@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTP-Solutions</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <script src="page.js"></script>
+    
+</head>
+<body>
+    <header>
+          <div class="header-container">
+             <div class="logo">
+                <img src="asset/images/BTP_mini-Solutions_Logo----.png" alt="#">
+             </div>
+             <nav>
+                <ul class="sidebar">
+                    <li onclick=hidesidebar()><a href="#"><img src="asset/images/close_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="#"></a></li>
+                    <li id="nav-home"><a href="">Accueeil</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#apropos-de-nous">À propos</a></li>
+                    <li><a  href="#Contact">Contact</a></li>
+                </ul>
+                <ul>
+                    <li id="nav-home" class="hideonmobile" ><a href="">Accueil</a></li>
+                    <li class="hideonmobile"><a href="#Services">Services</a></li>
+                    <li class="hideonmobile"><a href="#apropos-de-nous">À propos</a></li>
+                    <li class="hideonmobile"><a class="hideonmobile" href="#Contact">Contact</a></li>
+                    <li class="menu-button" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="40" viewBox="0 0 24 24" style="fill: #ffffff;transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg></a></li>
+                </ul>
+             </nav>
+          </div>  
+    </header>
+    <main>
+        <section id="heros">
+            <div class="back-hero">
+                <div class="heros-container">
+                    <h1>Construisons ensemble des infrastructures durables avec BTP Solutions</h1>
+                    <h2>Expertise, qualité et innovation <br> au service de vos projets</h2>
+                    <button class="btn">Contactez-nous</button>
+                </div>
+            </div> 
+      </section>
+      <section id="Services">
+        <div class="big-title" id="service">
+            <h1>Nos Services</h1>
+        </div>
+            <div class="Services-container">
+                         
+                 <div class="services-block">
+                      <div class="block">
+                          <img src="asset/images/service-1.webp" alt="#">
+                          <h3>Construction de bâtiments</h3>
+                          <p>Des constructions robustes et esthétiques pour tous vos besoins résidentiels, commerciaux et industriels.</p>
+                      </div>
+                      <div class="block">
+                          <img src="asset/images/service-2.webp" alt="#">
+                          <h3>Travaux publics</h3>
+                          <p>Des infrastructures publiques fiables et durables, incluant routes, ponts et aménagements urbains.</p>
+                      </div>
+                      <div class="block">
+                          <img src="asset/images/service-3.webp" alt="#">
+                          <h3>Travaux publics</h3>
+                          <p>Redonnez vie à vos bâtiments avec nos solutions de rénovation complètes et innovantes.</p>
+                      </div>
+                 </div>
+            </div>
+      </section>
+      <section id="apropos-de-nous">
+                 <div class="big-title">
+                   <h1>À propos de BTP Solutions</h1>
+                 </div>
+               <div class="apropos-container">
+                    <div  class="apropos-content">
+                        <div class="history-left">
+                          <p>BTP Solutions est une entreprise de Bâtiment et Travaux Publics  dédiée à la réalisation de projets d'infrastructures de haute  qualité. Avec une équipe d'experts passionnés et expérimentés, nous nous engageons  à fournir des solutions innovantes et durables pour répondre aux besoins  de nos clients.</p> 
+                        </div>
+                        <div class="apropos-right">
+                            <img src="asset/images/Heros.webp" alt="#">
+                        </div>
+                    </div>
+               </div>
+      </section>
+      <section id="clients">
+                    <div class="big-title">
+                       <h1>Ce que disent nos clients</h1> 
+                    </div>
+              <div class="clients-container">
+                  <div class="client">
+                    <img src="asset/images/istockphoto-1093999852-612x612-removebg-preview.png" alt="#">
+                    <p>Grâce à BTP Solutions, notre nouveau siège social est un véritable succès. Leur professionnalisme et leur souci du détail ont été remarquables.</p>
+                  </div>
+                  <div class="client">
+                <img src="asset/images/istockphoto-1272208630-612x612-removebg-preview.png" alt="#">
+                    <p>Les travaux de rénovation de notre école ont été réalisés 
+                       avec une grande précision et dans les délais 
+                       impartis. Merci à toute l'équipe de BTP Solutions.</p>
+                  </div>
+                  <div class="client">
+                    <img src="asset/images/360_F_297245133_gBPfK0h10UM3y7vfoEiBC3ZXt559KZar-removebg-preview.png" alt="#">
+                    <p>La nouvelle route construite par BTP Solutions a considérablement amélioré la circulation dans notre commune. Une entreprise que je recommande vivement</p>
+                  </div>
+              </div>
+      </section>
+      <section id="Contact">
+                   <div class="big-title">
+                    <h1>Contactez-nous</h1>
+                   </div>
+               <div class="contact-container">
+                   <div class="content">
+                          <div class="formulaire">
+                               <form action="#">
+                                <div class="form-grp">
+                                    <label for="username">Name</label>
+                                    <input type="text" id="username" name="username" pattern="[^0-9]*" placeholder="Enter votre nom" required>
+                                 </div>
+                                  <div class="form-grp">
+                                     <label for="email">Email</label>
+                                     <input type="email" name="email" id="email"  placeholder="Entre votre email" required>
+                                  </div>
+                                  <div class="form-grp" id="message">
+                                     <label for="message">Message</label>
+                                     <input type="message" name="message" id="message" placeholder="Ecrire " required>
+                                  </div>
+                                  <div class="bnt">
+                                    <button>Contactez-nous</button>
+                                  </div>
+                                </form>  
+                          </div>
+                          <div class="maps-right">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60681.202213888275!2d-15.9776768!3d18.091212799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2s!4v1718409091444!5m2!1sfr!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </div>
+                          
+                   </div>
+      </section>    
+             <section>
+                <div class="cordonner">
+                    <div class="cord-content">
+                      <div class="touch">
+                          <img src="asset/images/envelope-solid-24(2).png" alt="#">
+                          <div class="email"><h1>contact@btpsolutions.com</h1>  </div> 
+                      </div>
+                       <div class=" touch">
+                          <img src="asset/images/phone-call-solid-24.png" alt="#">
+                          <div class="phone">
+                            <h1>+123 456 7890</h1>
+                           </div>
+                       </div>
+                      
+                    </div>
+                 </div>
+             </div>
+             </section>  
+    </main>
+     <footer id="foot">
+         <div class="footer-container">
+            <div class="logo" id="logo-img">
+                <img src="asset/images/BTP_mini-Solutions_Logo----.png" alt="#">
+            </div>
+            <div class="lien">
+                <a href="https://linkding.example.com"><img src="asset/images/linkedin-square-logo-24(6).png" alt="#"></a>
+            </div>
+            <div class="lien">
+                <a href="https://twitter.com"><img src="asset/images/twitter-logo-24(9).png" alt="#"></a>
+            </div>
+            <div class="copyright">
+              <p> © 2024 Civil Group. Privacy policy</p>  
+            </div>
+         </div>
+     </footer>
+</body>
+</html>

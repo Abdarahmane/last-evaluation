@@ -54,6 +54,10 @@ a{
     border-style: none;
     font-size: 18px;
  }
+ .btn:hover{
+    cursor: pointer;
+
+ }
  hr{
     color: var(--Dark-Slate-Blue);
  }
@@ -102,7 +106,7 @@ nav ul li {
     margin-top: 100px;
 }
 #Services{
-    background-color:var(--Beige);
+    background-color: var(--primary);
     padding: 15px 0 55px;
 }
 
@@ -111,6 +115,7 @@ nav ul li {
     display: flex;
     justify-content: center;
     gap: 40px;
+   
      
     
 }
@@ -126,6 +131,7 @@ margin-top: 25px;
 background-color: white;
 text-align: center;
 border-radius: 15px;
+border: 1px solid var(--Dark-Slate-Blue);
 
 }
 .block img {
@@ -175,7 +181,7 @@ border-radius: 15px;
 .client{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     background-color: var(--Beige);
     width: 90%;
     padding: 20px 10px 20px;
@@ -188,18 +194,16 @@ border-radius: 15px;
     color: var(--Dark-Slate-Blue);
 }
 .client img {
- width: 70%;
+ width: 60%;
  height: 50%;
  text-align: center;
- 
- margin-left: 45px;
 
 }
 
 
 
 #Contact{
-    background-color: var(--Beige);
+    background-color: var(--primary);
 }
 
 
@@ -233,7 +237,7 @@ border-radius: 15px;
     border-radius: 12px;
     width: 100%;
     padding: 20px;
-    border: none;
+    border: 1px solid var(--Dark-Slate-Blue);
 }
 
 .form-grp label {
@@ -247,7 +251,7 @@ border-radius: 15px;
     padding: 20px;
     border-radius: 15px;
     resize: none;
-    border: none;
+    border: 1px solid var(--Dark-Slate-Blue);
   
 }
 
@@ -260,6 +264,7 @@ border-radius: 15px;
     border-radius: 15px;
     border-style: none;
     font-size: 18px;
+    cursor: pointer;
     
 }
 
@@ -281,30 +286,42 @@ border-radius: 15px;
 .phone-email{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 /* .touch-phone {
     display: flex;
     justify-content: space-between;
 } */
+
+.touch-phone{
+    text-align: center;
+}
 .touch-phone img{
     width: 40px;
     height: 40px;
-    justify-content: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 .touch-phone h1{
-    font-size: 16px;
+    font-size: 20px;
     color: var(--Dark-Slate-Blue);
+    text-align: center;
+}
+.touch-email{
+    text-align: center;
 }
 .touch-email h1{
-    font-size: 16px;
+    font-size: 20px;
     color: var(--Dark-Slate-Blue);
+    text-align: center;
+    align-items: center;
 }
    
 
 .touch-email img{
     width: 40px;
     height: 40px;
-    margin-left: 120px;
+    text-align: center;
 }
 
 
@@ -353,12 +370,14 @@ footer{
  .sidebar li {
     width: 100%;
  }
+ .sidebarimg img{
+    width: 30%;
+ }
  .sidebar a{
     width: 100%;
  }
 .sidebar ul li img{
-    width: 10px;
-    height:30;
+  
 }
 .menu-button{ 
     display: none;
@@ -428,6 +447,7 @@ footer{
 
     .block {
         width: 100%;
+      
     }
 
     .apropos-content {
@@ -479,6 +499,8 @@ footer{
         padding: 20px 10px 20px;
         margin-bottom: 40px;
         border-radius: 15px;
+        text-align: center;
+        align-items: center;
         /* margin-left: 
         95px; */
     }
